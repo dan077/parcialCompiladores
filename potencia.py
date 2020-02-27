@@ -4,9 +4,9 @@ obtenerValores = sys.argv[1:]
 
 def obtenerLenguaje(lenguaje):
     lenguaje = lenguaje[3:];
-    lenguaje.split(",");
-    lenguaje[-1] = str(lenguaje[-1]).replace("}","");
-    return lenguaje;
+    elementos=lenguaje.split(",");
+    elementos[-1] = elementos[-1].replace("}","")
+    return elementos;
 
 print(obtenerLenguaje(str(obtenerValores[0])));
 
