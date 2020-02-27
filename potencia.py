@@ -21,3 +21,6 @@ print(obtenerLenguaje(obtenerValores[0]));
 print(obtenerPotencia(obtenerValores[1]))
 print(obtenerVista(obtenerValores[2]))
 
+for i in range(len(Lenguaje())):
+    if lenguaje[i] == '#'
+        
