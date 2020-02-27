@@ -8,5 +8,12 @@ def obtenerLenguaje(lenguaje):
     elementos[-1] = elementos[-1].replace("}","")
     return elementos;
 
-print(obtenerLenguaje(str(obtenerValores[0])));
+def obtenerPotencia(potencia):
+    potencia = potencia[2:]
+    portencia = int(potencia);
+    return potencia
+
+
+print(obtenerLenguaje(obtenerValores[0]));
+print(obtenerPotencia(obtenerValores[1]))
 
