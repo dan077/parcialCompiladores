@@ -10,3 +10,6 @@ def obtenerLenguaje(lenguaje):
 
 print(obtenerLenguaje(str(obtenerValores[0])));
 
+for i in range(len(Lenguaje())):
+    if lenguaje[i] == '#'
+        
