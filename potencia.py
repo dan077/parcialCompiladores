@@ -13,9 +13,13 @@ def obtenerPotencia(potencia):
     portencia = int(potencia);
     return potencia
 
+def obtenerVista(vista):
+    vista = vista[0]
+    return vista;
 
 print(obtenerLenguaje(obtenerValores[0]));
 print(obtenerPotencia(obtenerValores[1]))
+print(obtenerVista(obtenerValores[2]))
 
 for i in range(len(elementos())):
 
