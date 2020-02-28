@@ -17,6 +17,11 @@ def obtenerPotencia(potencia):
 print(obtenerLenguaje(obtenerValores[0]));
 print(obtenerPotencia(obtenerValores[1]))
 
-for i in range(len(Lenguaje())):
-    if lenguaje[i] == '#'
+for i in range(len(elementos())):
+
+    if (elementos[i] == '#'):
+        
+        c +=c+1
+        print('#')
+
         
