@@ -1,6 +1,7 @@
 import sys
 
 obtenerValores = sys.argv[1:]
+objetoVacio = "#"
 
 def obtenerLenguaje(lenguaje):
     lenguaje = lenguaje[3:];
@@ -17,10 +18,36 @@ def obtenerVista(vista):
     vista = vista[0]
     return vista;
 
-print(obtenerLenguaje(obtenerValores[0]));
-print(obtenerPotencia(obtenerValores[1]))
-print(obtenerVista(obtenerValores[2]))
+def potencia(elementos,potencia):
+    if(potencia == 0):
+        return ["#"]
+    elif(potencia == 1):
+        return elementos
+    else:
+        vectorInicial = elementos;
+        vectorAux1 = elementos;
+        vectorAux2 = []
+        resultadoPotencia = []
+        resultadoPotencia.append(["#"]); resultadoPotencia.append(elementos)
+        for i in range(potencia -1):
+            for q in vectorInicial:
+                for x in vectorAux1:
+                    vectorAux2.append(str(q)+str(x))
+            resultadoPotencia.append(vectorAux2);
+            vectorAux1 = vectorAux2;
+            vectorAux2 = [];
+        return  resultadoPotencia;
 
-for i in range(len(Lenguaje())):
-    if lenguaje[i] == '#'
+
+elementos = obtenerLenguaje(obtenerValores[0]);
+potencias = obtenerPotencia(obtenerValores[1]);
+vista = obtenerVista(obtenerValores[2]);
+
+print(potencia(elementos,int(potencias)))
+
+
+
+
+
+
         
