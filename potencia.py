@@ -3,20 +3,24 @@ import sys
 obtenerValores = sys.argv[1:]
 objetoVacio = "#"
 
+
 def obtenerLenguaje(lenguaje):
     lenguaje = lenguaje[3:];
-    elementos=lenguaje.split(",");
-    elementos[-1] = elementos[-1].replace("}","")
+    elementos = lenguaje.split(",");
+    elementos[-1] = elementos[-1].replace("}", "")
     return elementos;
+
 
 def obtenerPotencia(potencia):
     potencia = potencia[2:]
     portencia = int(potencia);
     return potencia
 
+
 def obtenerVista(vista):
     vista = vista[0]
     return vista;
+
 
 def potencia(elementos,potencia):
     if(potencia == 0):
